@@ -7,50 +7,45 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1373-clock
 x-kinRank: "8"
 x-alexaRank: "643753"
 tags: Clockwork
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-29"
+modified: "2018-08-29"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/clockwork/master/_listings/clockwork/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Clockwork SMS Check Balance
-  x-api-slug: clockwork-sms
+- name: Clockwork SMS - Check Balance
+  x-api-slug: balance-get
   description: Check how much credit you have left on your account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1373-clockwork.jpg
   humanURL: http://clockworksms.com
-  baseURL: http://api.clockworksms.com/http///balance
-  tags: Check,Balance
+  baseURL: http://api.clockworksms.com/http/
+  tags: Bulk, Global, SMS, Target, Stack Network, Technology, Mobile, internet, SaaS,
+    Telecommunications, API Provider, SMS, Telecommunications, Messages, Messages,
+    Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/clockwork/master/_listings/clockwork/balance-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/clockwork/master/_listings/clockwork/balance-get-openapi.md
-- name: Clockwork SMS Send SMS Via HTTP
-  x-api-slug: clockwork-sms
+- name: Clockwork SMS - Send SMS Via HTTP
+  x-api-slug: send-aspx-get
   description: The HTTP interface to send text messages can be accessed using GET
     or POST. All parameters must be URL Encoded and sent as UTF-8 text.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1373-clockwork.jpg
   humanURL: http://clockworksms.com
-  baseURL: http://api.clockworksms.com/http//send.aspx
-  tags: Send,SMS,Via,HTTP
+  baseURL: http://api.clockworksms.com/http/
+  tags: Bulk, Global, SMS, Target, Stack Network, Technology, Mobile, internet, SaaS,
+    Telecommunications, API Provider, SMS, Telecommunications, Messages, Messages,
+    Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/clockwork/master/_listings/clockwork/send-aspx-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/clockwork/master/_listings/clockwork/send-aspx-get-openapi.md
-- name: Clockwork SMS
-  x-api-slug: clockwork-sms
-  description: The Clockwork SMS API access to an SMS gateway allowing users to send
-    messages through an application. Clockwork is a service that allows for the sending
-    of bulk SMS. The API uses RESTful, SOAP and SMPP protocol. Responses are formatted
-    in XML.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1373-clockwork.jpg
-  humanURL: http://clockworksms.com
-  baseURL: http://api.clockworksms.com/http/
-  tags: Clockwork
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/clockwork/master/_listings/clockwork/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://climacell.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://clockwork.stack.network
 - type: x-base
   url: http://api.clockworksms.com
 - type: x-blog
